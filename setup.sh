@@ -28,7 +28,7 @@ git clone git@github.com:robbyrussell/oh-my-zsh ~/.oh-my-zsh
 ln -s ~/dotfiles/zshrc .zshrc
 # cp .oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 chsh -s /bin/zsh
-# * exit and ssh again
+# * exit and ssh again (or log out)
 
 git clone git@github.com:aotimme/vim ~/.vim
 ln -s ~/.vim/vimrc .vimrc
@@ -44,3 +44,5 @@ sudo apt-get install mongodb-dev
 
 # install ruby stuff (for rake)
 sudo apt-get install ruby-rvm
+# didn't work on netbook:
+#sudo rvm install 1.9.2    # a useful ruby version (e.g. ember)
