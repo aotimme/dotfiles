@@ -1,0 +1,18 @@
+#bind -k kP focus prev
+#bind -k kN focus
+#bind -k kl focus prev
+#bind -k kr focus
+#overwrite a couple of unused keys for this as well
+#bind - focus prev
+#bind = focus
+#don't need this for the screen title since I'm using the preexec hack in .bashrc
+#shelltitle "$ |bash"
+#split -v
+ 
+#stolen from BSS
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+ 
+#escape ``
+
+# set default shell to zsh (see oh-my-zsh)
+shell -/bin/zsh
