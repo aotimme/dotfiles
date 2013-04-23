@@ -46,3 +46,6 @@ sudo apt-get install mongodb-dev
 sudo apt-get install ruby-rvm
 # didn't work on netbook:
 #sudo rvm install 1.9.2    # a useful ruby version (e.g. ember)
+
+# LIFESWAP
+# copy .zshenv (changing $LIFESWAP_HOME if necessary)
