@@ -35,6 +35,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+PROMPT='%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 # My own.
@@ -60,7 +62,9 @@ PATH=$PATH:./node_modules/.bin
 #PATH=$PATH:$LIFESWAP_HOME/lifeswap/node_modules/.bin
 #PATH=$PATH:../node_modules/.bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export EDITOR=vim
+
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 source ~/.rvm/scripts/rvm
 

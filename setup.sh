@@ -39,6 +39,9 @@ ln -s ~/.vim/vimrc .vimrc
 sudo apt-get install nginx-full
 sudo service nginx start
 
+# install redis
+sudo apt-get install redis-server
+
 # install mongodb
 sudo apt-get install mongodb-dev
 
