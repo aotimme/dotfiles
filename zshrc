@@ -59,7 +59,7 @@ alias sr="screen -r"    # reattach to screen session
 alias sn="screen -S"    # new screen session
 
 # access mongo in production
-alias mongoprod="mongo db.datafox.co/datafox -u ${DF_DB_ADMIN} -p ${DF_DB_PASS}"
+alias mongoprod="mongo ${DF_DB_URL}/${DF_DB_DB} -u ${DF_DB_ADMIN} -p ${DF_DB_PASS}"
 
 PATH=$PATH:./node_modules/.bin
 #PATH=$PATH:$LIFESWAP_HOME/lifeswap/node_modules/.bin
