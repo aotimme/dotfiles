@@ -42,7 +42,7 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 # My own.
 alias open='gnome-open'
 alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
-alias go='git checkout'
+alias gco='git checkout'
 
 alias seed='kanso wipe && kanso seed'
 alias wipe='kanso wipe && kanso push'
@@ -61,7 +61,7 @@ alias sn="screen -S"    # new screen session
 # access mongo in production
 alias mongoprod="mongo ${DF_DB_URL}/${DF_DB_DB} -u ${DF_DB_ADMIN} -p ${DF_DB_PASS}"
 
-PATH=$PATH:./node_modules/.bin
+export PATH=$PATH:./node_modules/.bin
 #PATH=$PATH:$LIFESWAP_HOME/lifeswap/node_modules/.bin
 #PATH=$PATH:../node_modules/.bin
 
@@ -73,3 +73,6 @@ source ~/.rvm/scripts/rvm
 
 # node version manager
 source ~/.nvm/nvm.sh
+
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
