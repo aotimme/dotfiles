@@ -76,3 +76,4 @@ source ~/.nvm/nvm.sh
 
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
+export PATH=$PATH:$HOME/go/bin
